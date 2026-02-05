@@ -1,0 +1,15 @@
+composer require paragonie/random_compat
+composer require paragonie/sodium_compat
+composer require paragonie/halite
+<?php
+// encryption.php
+use ParagonIE\Halite\KeyFactory;
+use ParagonIE\Halite\Symmetric\Crypto as SymmetricCrypto;
+
+// تشفير البيانات
+$key = KeyFactory::generateEncryptionKey();
+KeyFactory::save($key, 'secret-key.txt');
+
+$ciphertext = SymmetricCrypto::encrypt('بيانات سرية', $key);
+$plaintext = SymmetricCrypto::decrypt($ciphertext, $key);
+?>

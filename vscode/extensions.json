@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "bmewburn.vscode-intelephense-client",
+    "xdebug.php-debug",
+    "esbenp.prettier-vscode",
+    "ritwickdey.liveserver",
+    "ms-vscode.live-server",
+    "formulahendry.auto-rename-tag",
+    "aaron-bond.better-comments",
+    "oderwat.indent-rainbow"
+  ]
+}

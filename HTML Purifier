@@ -1,0 +1,19 @@
+composer require ezyang/htmlpurifier
+<?php
+// html-cleaner.php
+require_once 'vendor/autoload.php';
+
+use HTMLPurifier;
+use HTMLPurifier_Config;
+
+$config = HTMLPurifier_Config::createDefault();
+$config->set('Core.Encoding', 'UTF-8');
+$config->set('HTML.Doctype', 'HTML 4.01 Transitional');
+$config->set('HTML.Allowed', 'p,b,i,a[href],img[src]');
+$config->set('AutoFormat.RemoveEmpty', true);
+
+$purifier = new HTMLPurifier($config);
+
+// تنظيف المدخلات
+$clean_html = $purifier->purify($_POST['content']);
+?>

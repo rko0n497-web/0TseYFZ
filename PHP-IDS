@@ -1,0 +1,20 @@
+composer require phpids/phpids
+<?php
+// ids-protection.php
+require_once 'vendor/autoload.php';
+
+use IDS\Init;
+use IDS\Monitor;
+
+$init = Init::init();
+$ids = new Monitor($init);
+
+$result = $ids->run($_REQUEST);
+
+if (!$result->isEmpty()) {
+    // تم اكتشاف هجوم
+    error_log("هجوم مكتشف: " . print_r($result->getImpact(), true));
+    header('HTTP/1.1 403 Forbidden');
+    die('تم اكتشاف نشاط مشبوه');
+}
+?>

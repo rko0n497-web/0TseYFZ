@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الدورات | مساحة رقمية للمعرفة والتطوير</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">TseYFZ<span>Hub</span></a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="about.html">عني</a></li>
+                <li><a href="courses.html" class="active">الدورات</a></li>
+                <li><a href="#contact">التواصل</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="تبديل وضع الألوان">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- رأس صفحة الدورات -->
+    <section class="courses-hero">
+        <div class="section-container">
+            <div class="courses-hero-content">
+                <h1 class="courses-hero-title">دورات <span class="highlight">تعلم البرمجة</span></h1>
+                <p class="courses-hero-subtitle">مجموعة مختارة من أفضل الدورات المعتمدة من منصات موثوقة مثل سطور وإدراك لتطوير مهاراتك البرمجية</p>
+                <div class="courses-search">
+                    <input type="text" placeholder="ابحث عن دورة معينة...">
+                    <button class="btn btn-primary"><i class="fas fa-search"></i> بحث</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- فلاتر التصنيف -->
+    <section class="courses-filters">
+        <div class="section-container">
+            <div class="filters-container">
+                <div class="filter-title">تصفية حسب:</div>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">الكل</button>
+                    <button class="filter-btn" data-filter="web">تطوير الويب</button>
+                    <button class="filter-btn" data-filter="html">HTML & CSS</button>
+                    <button class="filter-btn" data-filter="js">JavaScript</button>
+                    <button class="filter-btn" data-filter="design">تصميم UI/UX</button>
+                    <button class="filter-btn" data-filter="backend">البرمجة الخلفية</button>
+                </div>
+                <div class="sort-by">
+                    <label for="sort">ترتيب حسب:</label>
+                    <select id="sort">
+                        <option value="newest">الأحدث</option>
+                        <option value="popular">الأكثر شيوعًا</option>
+                        <option value="duration">المدة</option>
+                        <option value="difficulty">مستوى الصعوبة</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قائمة الدورات -->
+    <section class="courses-list">
+        <div class="section-container">
+            <div class="courses-grid">
+                <!-- دورة 1 -->
+                <div class="course-card" data-category="html">
+                    <div class="course-badge">HTML & CSS</div>
+                    <div class="course-platform">
+                        <div class="platform-logo edraak">إدراك</div>
+                        <div class="course-level easy">مبتدئ</div>
+                    </div>
+                    <div class="course-image">
+                        <img src="https://www.computersciencedegreehub.com/wp-" alt="دورة HTML و CSS">
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">مقدمة في تطوير الويب: HTML و CSS</h3>
+                        <p class="course-description">
+                            دورة شاملة للمبتدئين تغطي أساسيات بناء صفحات الويب باستخدام HTML5 و CSS3. تتضمن مشاريع عملية وتطبيقات تفاعلية.
+                        </p>
+                        <div class="course-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>15 ساعة</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-video"></i>
+                                <span>40 فيديو</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-certificate"></i>
+                                <span>شهادة</span>
+                            </div>
+                        </div>
+                        <div class="course-instructor">
+                            <i class="fas fa-user"></i>
+                            <span>د. محمد العلي</span>
+                        </div>
+                        <a href="https://www.edraak.org" target="_blank" class="btn btn-primary btn-block">الانتقال للدورة</a>
+                    </div>
+                </div>
+
+                <!-- دورة 2 -->
+                <div class="course-card" data-category="html">
+                    <div class="course-badge">HTML & CSS</div>
+                    <div class="course-platform">
+                        <div class="platform-logo sutur">سطور</div>
+                        <div class="course-level easy">مبتدئ</div>
+                    </div>
+                    <div class="course-image">
+                        <img src="https://www.computersciencedegreehub.com/wp-" alt="دورة CSS متقدمة">
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">دورة HTML شاملة من الصفر إلى الاحتراف</h3>
+                        <p class="course-description">
+                            دورة متكاملة تبدأ بأساسيات HTML وتنتقل إلى التقنيات المتقدمة مثل Forms, APIs, Multimedia مع مشاريع عملية.
+                        </p>
+                        <div class="course-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>20 ساعة</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-video"></i>
+                                <span>55 فيديو</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-certificate"></i>
+                                <span>شهادة</span>
+                            </div>
+                        </div>
+                        <div class="course-instructor">
+                            <i class="fas fa-user"></i>
+                            <span>. راكان ال موسى</span>
+                        </div>
+                        <a href="https://sotor.com" target="_blank" class="btn btn-primary btn-block">الانتقال للدورة</a>
+                    </div>
+                </div>
+
+                <!-- دورة 3 -->
+                <div class="course-card" data-category="js">
+                    <div class="course-badge">JavaScript</div>
+                    <div class="course-platform">
+                        <div class="platform-logo edraak">إدراك</div>
+                        <div class="course-level intermediate">متوسط</div>
+                    </div>
+                    <div class="course-image">
+                        <img src="assets/images/course-js.jpg" alt="دورة JavaScript">
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">برمجة JavaScript الحديثة (ES6+)</h3>
+                        <p class="course-description">
+                            تعلم JavaScript الحديثة مع أحدث المميزات مثل Arrow Functions, Promises, Async/Await, Modules وغيرها.
+                        </p>
+                        <div class="course-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>25 ساعة</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-video"></i>
+                                <span>60 فيديو</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-certificate"></i>
+                                <span>شهادة</span>
+                            </div>
+                        </div>
+                        <div class="course-instructor">
+                            <i class="fas fa-user"></i>
+                            <span>د. خالد الحربي</span>
+                        </div>
+                        <a href="https://www.edraak.org" target="_blank" class="btn btn-primary btn-block">الانتقال للدورة</a>
+                    </div>
+                </div>
+
+                <!-- دورة 4 -->
+                <div class="course-card" data-category="web">
+                    <div class="course-badge">تطوير الويب</div>
+                    <div class="course-platform">
+                        <div class="platform-logo coursera">Coursera</div>
+                        <div class="course-level intermediate">متوسط</div>
+                    </div>
+                    <div class="course-image">
+                        <img src="assets/images/course-web.jpg" alt="تطوير الويب">
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Web Design for Everybody Specialization</h3>
+                        <p class="course-description">
+                            تخصص كامل من جامعة ميشيغان يغطي HTML5, CSS3, JavaScript, Responsive Design، وAccessibility.
+                        </p>
+                        <div class="course-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>40 ساعة</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-video"></i>
+                                <span>85 فيديو</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-certificate"></i>
+                                <span>شهادة</span>
+                            </div>
+                        </div>
+                        <div class="course-instructor">
+                            <i class="fas fa-user"></i>
+                            <span>University of Michigan</span>
+                        </div>
+                        <a href="https://www.coursera.org" target="_blank" class="btn btn-primary btn-block">الانتقال للدورة</a>
+                    </div>
+                </div>
+
+                <!-- دورة 5 -->
+                <div class="course-card" data-category="design">
+                    <div class="course-badge">تصميم UI/UX</div>
+                    <div class="course-platform">
+                        <div class="platform-logo udemy">Udemy</div>
+                        <div class="course-level intermediate">متوسط</div>
+                    </div>
+                    <div class="course-image">
+                        <img src="assets/images/course-ui.jpg" alt="تصميم UI/UX">
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">دورة تصميم واجهات المستخدم UI/UX الشاملة</h3>
+                        <p class="course-description">
+                            تعلم مبادئ تصميم تجربة المستخدم وتصميم واجهات تفاعلية باستخدام Figma مع مشاريع عملية وحقيقية.
+                        </p>
+                        <div class="course-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>30 ساعة</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-video"></i>
+                                <span>70 فيديو</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-certificate"></i>
+                                <span>شهادة</span>
+                            </div>
+                        </div>
+                        <div class="course-instructor">
+                            <i class="fas fa-user"></i>
+                            <span>أ. سارة القحطاني</span>
+                        </div>
+                        <a href="https://www.udemy.com" target="_blank" class="btn btn-primary btn-block">الانتقال للدورة</a>
+                    </div>
+                </div>
+
+                <!-- دورة 6 -->
+                <div class="course-card" data-category="backend">
+                    <div class="course-badge">البرمجة الخلفية</div>
+                    <div class="course-platform">
+                        <div class="platform-logo sutur">سطور</div>
+                        <div class="course-level advanced">متقدم</div>
+                    </div>
+                    <div class="course-image">
+                        <img src="assets/images/course-backend.jpg" alt="البرمجة الخلفية">
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">تطوير تطبيقات الويب باستخدام Node.js</h3>
+                        <p class="course-description">
+                            تعلم بناء تطبيقات ويب كاملة باستخدام Node.js، Express.js، وقواعد البيانات مع مشروع تطبيقي كامل.
+                        </p>
+                        <div class="course-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>35 ساعة</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-video"></i>
+                                <span>80 فيديو</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-certificate"></i>
+                                <span>شهادة</span>
+                            </div>
+                        </div>
+                        <div class="course-instructor">
+                            <i class="fas fa-user"></i>
+                            <span>د. فهد الشمري</span>
+                        </div>
+                        <a href="https://sotor.com" target="_blank" class="btn btn-primary btn-block">الانتقال للدورة</a>
+                    </div>
+                </div>
+
+                <!-- دورة 7 -->
+                <div class="course-card" data-category="web">
+                    <div class="course-badge">تطوير الويب</div>
+                    <div class="course-platform">
+                        <div class="platform-logo freecodecamp">FreeCodeCamp</div>
+                        <div class="course-level intermediate">متوسط</div>
+                    </div>
+                    <div class="course-image">
+                        <img src="assets/images/course-responsive.jpg" alt="التصميم المتجاوب">
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Responsive Web Design Certification</h3>
+                        <p class="course-description">
+                            شهادة مجانية تغطي أساسيات HTML, CSS، وتقنيات Responsive Design مثل Flexbox, Grid, Media Queries.
+                        </p>
+                        <div class="course-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>300 ساعة</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-video"></i>
+                                <span>مشاريع عملية</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-certificate"></i>
+                                <span>شهادة</span>
+                            </div>
+                        </div>
+                        <div class="course-instructor">
+                            <i class="fas fa-user"></i>
+                            <span>FreeCodeCamp</span>
+                        </div>
+                        <a href="https://www.freecodecamp.org" target="_blank" class="btn btn-primary btn-block">الانتقال للدورة</a>
+                    </div>
+                </div>
+
+                <!-- دورة 8 -->
+                <div class="course-card" data-category="html">
+                    <div class="course-badge">HTML & CSS</div>
+                    <div class="course-platform">
+                        <div class="platform-logo youtube">YouTube</div>
+                        <div class="course-level easy">مبتدئ</div>
+                    </div>
+                    <div class="course-image">
+                        <img src="assets/images/course-htmlcss.jpg" alt="HTML و CSS كامل">
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">دورة HTML و CSS كاملة للمبتدئين (عربي)</h3>
+                        <p class="course-description">
+                            دورة مجانية على اليوتيوب تغطي كل ما تحتاجه لبدء رحلتك في تطوير الويب من الصفر حتى الإحتراف.
+                        </p>
+                        <div class="course-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>12 ساعة</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-video"></i>
+                                <span>30 فيديو</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-certificate"></i>
+                                <span>دروس مجانية</span>
+                            </div>
+                        </div>
+                        <div class="course-instructor">
+                            <i class="fas fa-user"></i>
+                            <span>قناة الزيرو</span>
+                        </div>
+                        <a href="https://www.youtube.com" target="_blank" class="btn btn-primary btn-block">الانتقال للدورة</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ترقيم الصفحات -->
+            <div class="pagination">
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn">4</button>
+                <button class="page-btn next">التالي <i class="fas fa-arrow-left"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- نصائح للتعلم -->
+    <section class="learning-tips">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">نصائح <span class="highlight">للتعلم الفعال</span></h2>
+                <p class="section-subtitle">بعض الإرشادات التي تساعدك على تحقيق أقصى استفادة من الدورات</p>
+            </div>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-target"></i>
+                    </div>
+                    <h3 class="tip-title">حدد هدفًا واضحًا</h3>
+                    <p class="tip-description">
+                        قبل البدء في أي دورة، حدد ما تريد تحقيقه بالضبط. هل تريد بناء موقع شخصي؟ أم تعلم مهارة جديدة للعمل؟
+                    </p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3 class="tip-title">التزم بجدول منتظم</h3>
+                    <p class="tip-description">
+                        خصص وقتًا ثابتًا للتعلم كل يوم أو كل أسبوع. الانتظام هو مفتاح النجاح في تعلم البرمجة.
+                    </p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="tip-title">طبق ما تتعلمه</h3>
+                    <p class="tip-description">
+                        لا تكتف بمشاهدة الدروس. طبق كل مفهوم تتعلمه بمشاريع صغيرة. الممارسة هي أفضل طريقة للتعلم.
+                    </p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="tip-title">انضم للمجتمعات</h3>
+                    <p class="tip-description">
+                        انضم لمجتمعات المبرمجين عبر الإنترنت. المشاركة في المناقشات وطرح الأسئلة يساعد في تخطي العقبات.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- تذييل الصفحة -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">
+                        <a href="index.html">TseYFZ<span>Hub</span></a>
+                    </div>
+                    <p class="footer-description">
+                        مساحة رقمية شاملة تجمع المحتوى المعرفي، الأدوات العملية، والدورات المعتمدة لتطوير مهارات البرمجة والتقنية.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="تويتر"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="يوتيوب"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="جيت هاب"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="لينكد إن"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-title">روابط سريعة</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="about.html">عني</a></li>
+                        <li><a href="courses.html">الدورات</a></li>
+                        <li><a href="#contact">التواصل</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-title">الدورات</h3>
+                    <ul class="footer-links">
+                        <li><a href="courses.html">تطوير الويب</a></li>
+                        <li><a href="courses.html">برمجة JavaScript</a></li>
+                        <li><a href="courses.html">تصميم UI/UX</a></li>
+                        <li><a href="courses.html">دورات HTML & CSS</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-title">المنصات الشريكة</h3>
+                    <div class="platforms">
+                        <div class="platform">سطور</div>
+                        <div class="platform">إدراك</div>
+                        <div class="platform">Coursera</div>
+                        <div class="platform">Udemy</div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">© 2024 TseYFZHub. جميع الحقوق محفوظة.</p>
+                <div class="footer-links-bottom">
+                    <a href="#">سياسة الخصوصية</a>
+                    <a href="#">شروط الاستخدام</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

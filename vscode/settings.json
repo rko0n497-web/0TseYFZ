@@ -1,0 +1,30 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/node_modules": true,
+    "**/vendor": true,
+    "**/logs": true,
+    "**/config/*.php": true,
+    "**/.env*": true
+  },
+  "files.associations": {
+    "*.tpl": "html",
+    "*.module": "php"
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "git.autoRepositoryDetection": "subFolders",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}

@@ -1,0 +1,18 @@
+composer require enlightn/security-checker
+<?php
+// security-scan.php
+require_once 'vendor/autoload.php';
+
+use Enlightn\SecurityChecker\SecurityChecker;
+
+$checker = new SecurityChecker();
+$result = $checker->check('composer.lock');
+
+echo "🔍 فحص ثغرات PHP:\n";
+foreach ($result as $package => $advisories) {
+    echo "📦 $package:\n";
+    foreach ($advisories as $adv) {
+        echo "   ⚠️  {$adv['title']} (CVE: {$adv['cve']})\n";
+    }
+}
+?>

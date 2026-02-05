@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مطور ويب | مساحة رقمية للمعرفة والتطوير</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">TseYFZ<span>Hub</span></a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">الرئيسية</a></li>
+                <li><a href="about.html">عن TseYFZ</a></li>
+                <li><a href="courses.html">الدورات</a></li>
+                <li><a href="#contact">التواصل</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="تبديل وضع الألوان">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- القسم الرئيسي -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">مساحة رقمية تجمع <span class="highlight">المحتوى والأدوات والمشاريع</span></h1>
+                <p class="hero-description">
+                    موقع شامل يهدف إلى تقديم محتوى معرفي مفيد، أدوات عملية، ودورات برمجة معتمدة من منصات موثوقة مثل سطور وإدراك. نهدف إلى تحويل المعرفة إلى مهارات تطبيقية.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#domains" class="btn btn-primary">استكشاف المجالات</a>
+                    <a href="courses.html" class="btn btn-secondary">الدورات التعليمية</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating-shape shape-1"></div>
+                <div class="floating-shape shape-2"></div>
+                <div class="floating-shape shape-3"></div>
+                <img src="https://i.postimg.cc/tJmXvW1V/lqtt-shasht-5-2-2026-161157-www-bing-com.jpg" alt="برمجة وتطوير" class="hero-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- مجالات الموقع -->
+    <section class="domains-section" id="domains">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">مجالات الموقع</h2>
+                <p class="section-subtitle">أقسام عامة تمثل طبيعة المحتوى، وليست قائمة روابط بديلة</p>
+            </div>
+            <div class="domains-grid">
+                <div class="domain-card">
+                    <div class="domain-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3 class="domain-title">المحتوى المعرفي</h3>
+                    <p class="domain-description">
+                        مقالات، ملخصات، دروس مختارة، ومواد توضيحية تُحدّث حسب الحاجة. مناسب للقراءة السريعة أو التعمّق.
+                    </p>
+                    <div class="domain-count">12+ مقالة</div>
+                </div>
+                <div class="domain-card">
+                    <div class="domain-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="domain-title">الأدوات والتجارب</h3>
+                    <p class="domain-description">
+                        أدوات تطبيقية وتجارب تفاعلية تساعد على تحويل المعرفة إلى ممارسة. بدون تعقيد، وبنتائج واضحة.
+                    </p>
+                    <div class="domain-count">8+ أداة</div>
+                </div>
+                <div class="domain-card">
+                    <div class="domain-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3 class="domain-title">المشاريع</h3>
+                    <p class="domain-description">
+                        نماذج أعمال ومشاريع مرتبة توضح الفكرة، التنفيذ، والنتائج. يُفضّل عرضها كدراسات حالة.
+                    </p>
+                    <div class="domain-count">6+ مشروع</div>
+                </div>
+                <div class="domain-card">
+                    <div class="domain-icon">
+                        <i class="fas fa-folder-open"></i>
+                    </div>
+                    <h3 class="domain-title">التوثيق والملفات</h3>
+                    <p class="domain-description">
+                        ملفات إنجاز، مرفقات، ونماذج جاهزة للاستخدام أو الاستلهام. مرجع سريع بدل تكرار العمل.
+                    </p>
+                    <div class="domain-count">20+ ملف</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- محتوى الأسبوع المميز -->
+    <section class="featured-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">محتوى مميز هذا الأسبوع</h2>
+                <p class="section-subtitle">وضع هنا عنصرًا واحدًا فقط ليكون "نقطة تركيز" بدل تشتيت الزائر</p>
+            </div>
+            <div class="featured-card">
+                <div class="featured-content">
+                    <div class="featured-badge">مميز</div>
+                    <h3 class="featured-title">دورة HTML & CSS كاملة للمبتدئين</h3>
+                    <p class="featured-description">
+                        دورة شاملة تغطي أساسيات تطوير الويب باستخدام HTML5 و CSS3 مع مشاريع عملية. تقدم بالشراكة مع منصة إدراك وتتضمن شهادة معتمدة عند الانتهاء.
+                    </p>
+                    <div class="featured-stats">
+                        <div class="stat">
+                            <i class="fas fa-clock"></i>
+                            <span>15 ساعة</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-user-graduate"></i>
+                            <span>مبتدئ</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-certificate"></i>
+                            <span>شهادة معتمدة</span>
+                        </div>
+                    </div>
+                    <a href="courses.html" class="btn btn-primary">الانتقال للدورة</a>
+                </div>
+                <div class="featured-image">
+                    <img src="https://img.freepik.com/free-photo/html-system-websites-concept_23-2150376770.jpg" alt="دورة HTML و CSS">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- آخر المستجدات -->
+    <section class="updates-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">آخر المستجدات</h2>
+                <p class="section-subtitle">مختصر مفيد يوضح أن الموقع حي ويتطور</p>
+            </div>
+            <div class="updates-grid">
+                <div class="update-card">
+                    <div class="update-date">مايو 2024</div>
+                    <h3 class="update-title">إضافة دورات جديدة</h3>
+                    <p class="update-description">
+                        تم إضافة 5 دورات جديدة في مجال تطوير الويب تشمل React.js، JavaScript متقدم، وتصميم واجهات المستخدم.
+                    </p>
+                    <a href="courses.html" class="update-link">استكشاف الدورات <i class="fas fa-arrow-left"></i></a>
+                </div>
+                <div class="update-card">
+                    <div class="update-date">أبريل 2024</div>
+                    <h3 class="update-title">تحسينات على واجهة الموقع</h3>
+                    <p class="update-description">
+                        ترتيب أفضل للأقسام وتوحيد نمط العرض في الصفحات الرئيسية لتحسين تجربة المستخدم.
+                    </p>
+                    <a href="index.html" class="update-link">رؤية التحسينات <i class="fas fa-arrow-left"></i></a>
+                </div>
+                <div class="update-card">
+                    <div class="update-date">مارس 2024</div>
+                    <h3 class="update-title">إضافة مورد جديد</h3>
+                    <p class="update-description">
+                        إضافة صفحة الأدوات التفاعلية مع 3 أدوات جديدة لاختبار الشيفرات البرمجية وتصحيحها.
+                    </p>
+                    <a href="#" class="update-link">تجربة الأدوات <i class="fas fa-arrow-left"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- التواصل -->
+    <section class="contact-section" id="contact">
+        <div class="section-container">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2 class="section-title">ملاحظات أو اقتراحات</h2>
+                    <p class="contact-description">
+                        إذا لديك اقتراح لتحسين الموقع أو تبليغ عن مشكلة، يمكنك التواصل عبر النموذج الموجود هنا. نرحب بكل الآراء والمقترحات البناءة.
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>البريد الإلكتروني</h4>
+                                <p>Rko0n497@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>المكان</h4>
+                                <p>الرياض، المملكة العربية السعودية</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="اسمك الكريم" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="بريدك الإلكتروني" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder="رسالتك أو اقتراحك" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">إرسال الرسالة</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- تذييل الصفحة -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">
+                        <a href="index.html">Dev<span>Hub</span></a>
+                    </div>
+                    <p class="footer-description">
+                        مساحة رقمية شاملة تجمع المحتوى المعرفي، الأدوات العملية، والدورات المعتمدة لتطوير مهارات البرمجة والتقنية.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="تويتر"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="يوتيوب"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="جيت هاب"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="لينكد إن"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-title">روابط سريعة</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="about.html">عن TseYFZ</a></li>
+                        <li><a href="courses.html">الدورات</a></li>
+                        <li><a href="#contact">التواصل</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-title">الدورات</h3>
+                    <ul class="footer-links">
+                        <li><a href="courses.html">تطوير الويب</a></li>
+                        <li><a href="courses.html">برمجة JavaScript</a></li>
+                        <li><a href="courses.html">تصميم UI/UX</a></li>
+                        <li><a href="courses.html">دورات HTML & CSS</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-title">المنصات الشريكة</h3>
+                    <div class="platforms">
+                        <div class="platform">سطور</div>
+                        <div class="platform">إدراك</div>
+                        <div class="platform">Coursera</div>
+                        <div class="platform">Udemy</div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">© 2024 DevHub. جميع الحقوق محفوظة.</p>
+                <div class="footer-links-bottom">
+                    <a href="#">سياسة الخصوصية</a>
+                    <a href="#">شروط الاستخدام</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
